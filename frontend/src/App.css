@@ -1,0 +1,123 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  color: #a855f7;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Animación musical para el ícono */
+.music-icon {
+  animation: pulse 1.5s infinite alternate;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1) translateY(0); color: #a855f7; }
+  100% { transform: scale(1.2) translateY(-5px); color: #d8b4fe; }
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.2);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #d8b4fe;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-field {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #a855f7;
+}
+
+.submit-btn {
+  background-color: #a855f7;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.submit-btn:hover {
+  background-color: #9333ea;
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+.song-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.song-item {
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #a855f7;
+}
+
+.song-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.song-artist {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
