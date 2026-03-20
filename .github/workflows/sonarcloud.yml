@@ -24,4 +24,4 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=JuandiGuti_musicfy
-            -Dsonar.organization=juandiguti1
+            -Dsonar.organization=juandiguti
